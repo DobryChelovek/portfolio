@@ -1,0 +1,13 @@
+:root {
+  --radius: 10px;
+}
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.radius {
+  border-radius: var(--radius)
+}
