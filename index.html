@@ -41,14 +41,29 @@
 
     <!-- модальное окно обо мне-->
     <div id="modal-about" uk-modal class="uk-modal-full ">
-        <div class="uk-modal-dialog uk-modal-body" uk-height-viewport>
-            <h2 class="uk-modal-title">Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-modal-dialog uk-modal-body " uk-height-viewport>
+            <div class="uk-container">
+                <h2 class="uk-modal-title inter">Headline</h2>
+                <p class="inter">Я специализируюсь на создании визуально ярких и интуитивно понятных интерфейсов. Имея опыт работы с
+                    Figma, Webflow и Framer, я умело провожу все этапы проектирования, от исследования пользователей до
+                    отточенного визуального исполнения. Я увлечен сотрудничеством со стартапами и известными брендами,
+                    превращая сложные концепции в обтекаемые, функциональные дизайны.
+                </p>
+
+                <div>
+                    <h3 class="inter">Прошлое и настоящее</h3>
+                        <div>
+                            <p class="inter">Должность</p>
+                            <p class="inter">год</p>
+                            <p class="inter">компания</p>
+                            <p class="inter">cфера</p>
+                            <p class="inter">что было сделано</p>
+                            <p class="inter">достижения</p>
+                        </div>
+                </div>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            </div>
         </div>
     </div>
     <!-- /модальное окно обо мне-->
@@ -56,51 +71,43 @@
     <main>
         <section class="uk-section uk-padding-remove-top">
             <div class="uk-container">
-                <h1 class="inter uk-heading-medium font-wight-500">UI/UX дизайнер <span class="font-color-secondary">с&nbsp;2
-                        годами опыта работы.</span> Проектирую <span class="font-color-secondary">B2C </span> 
-                        и&nbsp;<span class="font-color-secondary">B2B </span>продукты в&nbsp;сфере e-commerce </h1>
-                <div>
-
-                    <div class="uk-padding uk-padding-remove-horizontal uk-text-large">
-                        <p>Мне нравится, когда дизайн становится частью нашего повседневного опыта — от&nbsp;визуального
-                            впечатления интерактивных экранов и&nbsp;приложений до&nbsp;элегантности логотипа. Я&nbsp;люблю видеть,
-                            как&nbsp;дизайны изменяют наше восприятие мира, делая его ярче, более интуитивным 
-                            и&nbsp;интересным</p>
-                    </div>
+                <h1 class="inter uk-heading-medium font-wight-500">UI/UX дизайнер <span
+                        class="font-color-secondary">с&nbsp;2
+                        годами опыта работы.</span> Проектирую <span class="font-color-secondary">B2C </span>
+                    и&nbsp;<span class="font-color-secondary">B2B </span>продукты в&nbsp;сфере e-commerce
+                </h1>
+                <div class="uk-padding uk-padding-remove-horizontal uk-text-large">
+                    <p class="inter">Мне нравится, когда дизайн становится частью нашего повседневного опыта — от&nbsp;визуального
+                        впечатления интерактивных экранов до&nbsp;элегантности логотипа или&nbsp;рекламы.
+                        Я&nbsp;люблю видеть,
+                        как&nbsp;дизайны изменяют наше восприятие мира, делая его&nbsp;более интуитивным
+                        и&nbsp;интересным
+                    </p>
                 </div>
-
-
             </div>
         </section>
         <!-- слайдер -->
         <section class="uk-section">
-            <div uk-slider="parallax: true;">
-
-                <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+            <div
+                uk-slider="autoplay: true; autoplay-interval: 0; pause-on-hover: false; velocity: 0.04; easing: linear">
+                <div class="uk-slider-items uk-grid-small">
                     <div>
-                        <img src="https://lipsum.app/random/960x600" width="960" height="600" alt="">
-                        <div class="uk-position-center uk-panel">
-                            <h1>1</h1>
-                        </div>
+                        <img src="https://lipsum.app/random/960x600" loading="lazy" class="radius" width="960"
+                            height="600" alt="скриншот работы 1">
                     </div>
                     <div>
-                        <img src="https://lipsum.app/random/960x600" width="960" height="600" alt="">
-
+                        <img src="https://lipsum.app/random/690x600" loading="lazy" class="radius" width="690"
+                            height="600" alt="скриншот работы 2">
                     </div>
                     <div>
-                        <img src="https://lipsum.app/random/960x600" width="960" height="600" alt="">
+                        <img src="https://lipsum.app/random/960x600" loading="lazy" class="radius" width="960"
+                            height="600" alt="скриншот работы 3">
                     </div>
                     <div>
-                        <img src="https://lipsum.app/random/960x600" width="960" height="600" alt="">
-
+                        <img src="https://lipsum.app/random/960x600" loading="lazy" class="radius" width="960"
+                            height="600" alt="скриншот работы 4">
                     </div>
-                    <div>
-                        <img src="https://lipsum.app/random/960x600" width="960" height="600" alt="">
-
-                    </div>
-
                 </div>
-
 
             </div>
         </section>
@@ -108,27 +115,15 @@
         <!-- мои работы -->
         <section class="uk-section">
             <div class="uk-container">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2 class="uk-heading-small uk-text-center inter">Избранные работы с 2023 года</h2>
 
                 <div>
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem, ipsum dolor.</p>
-                    <img src="https://lipsum.app/random/400x600" width="400" height="600" alt="">
+                    <h3 class="inter">Lorem ipsum dolor sit.</h3>
+                    <p class="inter">Lorem, ipsum dolor.</p>
+                    <img src="https://lipsum.app/random/1440x800" width="100%" loading="lazy" class="radius"
+                        height="800" alt="превью работы">
                     <a href="#"></a>
                 </div>
-                <div>
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem, ipsum dolor.</p>
-                    <img src="https://lipsum.app/random/400x600" width="400" height="600" alt="">
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem, ipsum dolor.</p>
-                    <img src="https://lipsum.app/random/400x600" width="400" height="600" alt="">
-                    <a href="#"></a>
-                </div>
-            </div>
 
         </section>
         <!-- /мои работы -->
@@ -136,30 +131,30 @@
             <div class="uk-container">
                 <div class="uk-flex">
                     <div>
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <p>Lorem, ipsum dolor.</p>
+                        <h2 class="uk-heading-small inter">Чем я занимаюсь?</h2>
+                        <p class="inter">Lorem, ipsum dolor.</p>
                     </div>
                     <!-- аккондион -->
                     <div>
                         <ul uk-accordion="multiple: true">
                             <li class="uk-open">
-                                <a class="uk-accordion-title" href>Item 1</a>
+                                <a class="uk-accordion-title inter" href> Ui/ux дизайн</a>
                                 <div class="uk-accordion-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <p class="inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </li>
                             <li>
-                                <a class="uk-accordion-title" href>Item 2</a>
-                                <div class="uk-accordion-content">
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                <a class="uk-accordion-title" href>Моушен дизайн</a>
+                                <div class="uk-accordion-content inter">
+                                    <p class="inter">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                         aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
                                 </div>
                             </li>
                             <li>
-                                <a class="uk-accordion-title" href>Item 3</a>
+                                <a class="uk-accordion-title inter" href>Брендинг</a>
                                 <div class="uk-accordion-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    <p class="inter">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                                 </div>
                             </li>
@@ -170,12 +165,14 @@
             </div>
         </section>
     </main>
-    <footer class="radius" style="background-color: blue;">
+    <footer class="radius" style="background-color: var(--base-420); width: 99%;">
         <div class="uk-container">
             <div>
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem ipsum dolor sit.</p>
-                <button class="uk-button uk-button-secondary inter radius">Контакты</button>
+                <h2 class="uk-heading-small uk-text-center inter">Lorem ipsum dolor sit.</h2>
+                <p class="inter">Я всегда в поиске новых задач. Пожалуйста, не стесняйтесь обращаться ко мне за информацией, новыми
+                    проектами или сотрудничеством. Я свяжусь с вами в течение 24 часов!</p>
+                    <button
+                    class="uk-button uk-button-secondary inter radius uk-text-capitalize font-buttons ">Контакты</button>
             </div>
             <div>
                 <span uk-icon="heart"></span>
