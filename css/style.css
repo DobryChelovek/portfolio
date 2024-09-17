@@ -1,5 +1,7 @@
 :root {
-  --radius: 10px;
+  --radius: 12px;
+  --radius-avatar: 50%;
+  --base-400: #999999;
 }
 
 
@@ -10,4 +12,19 @@
 
 .radius {
   border-radius: var(--radius)
+}
+.radius-avatar {
+  border-radius: var(--radius-avatar)
+}
+.font-buttons {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.font-color-secondary {
+  color: var(--base-400)
+}
+
+.font-wight-500 {
+  font-weight: 500;
 }
