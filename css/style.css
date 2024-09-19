@@ -1,8 +1,10 @@
 :root {
   --radius: 12px;
+  --radius-img: 8px;
   --radius-avatar: 50%;
   --base-400: #999999;
   --base-420: #F3F4F5;
+  --white: #f9f9f9;
 }
 
 
@@ -13,6 +15,9 @@
 
 .radius {
   border-radius: var(--radius)
+}
+.radius-img {
+  border-radius: var(--radius-img)
 }
 .radius-avatar {
   border-radius: var(--radius-avatar)
@@ -27,5 +32,40 @@
 }
 
 .font-wight-500 {
+  font-weight: 500;
+}
+.h2 {
+font-size: 40px;
+font-weight: 500;
+color: var(--base-400);
+}
+.p {
+  font-size: 20px;
+font-weight: 400;
+}
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  
+  }
+  .card {
+    background-color: var(--white);
+    padding: 12px 12px 12px 12px;
+    margin: 0 0 2px 0;
+  }
+p {
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+h3 {
+  margin: 0;
+  padding: 0 0 8px 0;
+}
+.text-caption {
+  color: var(--base-400);
+}
+.link {
+  color: var(--base-400);
+  font-size: 20px;
   font-weight: 500;
 }
