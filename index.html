@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- добавить ключевые слова и deckription -->
     <link rel="stylesheet" href="./css/uikit.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script async src="./js/uikit-icons.min.js"></script>
@@ -19,18 +20,18 @@
         rel="stylesheet">
 
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-        <link rel="manifest" href="./images/site.webmanifest">
-        <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <meta property="og:image" content="https://dobrychelovek.github.io/portfolio/images/og.jpg"/>
+    <meta property="og:image" content="https://dobrychelovek.github.io/portfolio/images/og.jpg" />
 </head>
 
-<body style="background-color: var(--base-420);">
+<body >
     <!-- верхняя часть сайта -->
     <header class="uk-container">
         <nav class="uk-navbar-container uk-navbar-transparent uk-padding-large uk-padding-remove-horizontal">
@@ -41,22 +42,43 @@
                     </a>
                 </div>
                 <div class="uk-navbar-right" style="gap: 8px;">
+                    <div class="uk-visible@s">
+                        <a href="./cv-tishkina-mardarita.pdf" target="_blank"
+                            class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
+                            style="border: none;"> Резюме
+                        </a>
+                        <a id="telegram-margo"
+                            class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
+                            style="border: none;">
+                        </a>
+                        <a id="margo-simik"
+                            class="uk-button uk-button-default inter radius uk-text-lowercase font-buttons"
+                            style="border: none;">
+                        </a>
+                    </div>
 
-                    <a href="./cv-tishkina-mardarita.pdf" target="_blank"
-                        class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
-                        style="border: none;"> Резюме
-                    </a>
-                    <a  id="telegram-margo"
-                        class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
-                        style="border: none;"> 
-                    </a>
-                    <!-- погуглить -->
-                    <a id="margo-simik" 
-                        class="uk-button uk-button-default inter radius uk-text-lowercase font-buttons"
-                        style="border: none;"> 
-                    </a>
-                
-                   
+                    <div class="uk-hidden@s">
+                        <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                        <div class="uk-navbar-dropdown radius" style="width: 100%; box-shadow: none;">
+                            <ul class="uk-nav uk-navbar-dropdown-nav" >
+                                
+                                <a href="./cv-tishkina-mardarita.pdf" target="_blank"
+                            class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
+                            style="border: none; padding: 0;"> Резюме 
+                        </a> <br>
+                        <a  id="telegram-margo-m"
+                            class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
+                            style="border: none; padding: 0;">
+                        </a> <br>
+                        <a id="margo-simik-m"
+                            class="uk-button uk-button-default inter radius uk-text-lowercase font-buttons"
+                            style="border: none; padding: 0;">
+                        </a>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </nav>
@@ -65,14 +87,15 @@
     <!-- /верхняя часть сайта -->
     <main>
         <section class="uk-section uk-padding-remove-top">
-            <div class="uk-container">
-                <h1 class="inter uk-heading-medium font-wight-500">UI/UX дизайнер <span
-                        class="font-color-secondary">с&nbsp;2
-                        годами опыта работы.</span> Проектирую <span class="font-color-secondary">B2C </span>
+            <div class="uk-container uk-animation-slide-right-small" tabindex="0">
+
+                <h1 class="inter uk-heading-medium font-wight-500 ">UI/UX дизайнер. <span class="font-color-secondary">2
+                        года опыта работы.</span> Проектирую <span class="font-color-secondary">B2C </span>
                     и&nbsp;<span class="font-color-secondary">B2B </span>продукты в&nbsp;сфере e-commerce
                 </h1>
+
                 <div class="uk-padding uk-padding-remove-horizontal p">
-                    <p class="inter" style="width: 60%;">Мне нравится, когда дизайн становится частью нашего
+                    <p class="inter h1-subtitle">Мне нравится, когда дизайн становится частью нашего
                         повседневного опыта — от&nbsp;визуального
                         впечатления интерактивных экранов до&nbsp;элегантности логотипа или&nbsp;рекламы.
                         Я&nbsp;люблю видеть,
@@ -101,16 +124,16 @@
                     </div>
 
                     <div>
-                        <img src="./images/slide-4.png" loading="lazy" class="radius" width="401"
-                            height="600" alt="скриншот работы 4">
+                        <img src="./images/slide-4.png" loading="lazy" class="radius" width="401" height="600"
+                            alt="скриншот работы 4">
                     </div>
                     <div>
-                        <img src="./images/slide-5.png" loading="lazy" class="radius" width="800"
-                            height="600" alt="скриншот работы 5">
+                        <img src="./images/slide-5.png" loading="lazy" class="radius" width="800" height="600"
+                            alt="скриншот работы 5">
                     </div>
                     <div>
-                        <img src="./images/slide-6.png" loading="lazy" class="radius" width="401"
-                            height="600" alt="скриншот работы 6">
+                        <img src="./images/slide-6.png" loading="lazy" class="radius" width="401" height="600"
+                            alt="скриншот работы 6">
                     </div>
                 </div>
             </div>
@@ -126,16 +149,16 @@
                         <img src="./images/work-1.png" loading="lazy" class="radius-img" alt="превью работы">
                         <div class="uk-margin-top">
                             <div class="uk-flex uk-flex-middle " style="gap: 16px;">
-                                <h3 class="inter h3">Маркетплейс тарифов</h3>
+                                <h3 class="inter ">Маркетплейс тарифов</h3>
 
-                                <p class="inter p font-wight-500 text-caption">июнь 2024 <span
+                                <p class="inter  font-wight-500 text-caption">июнь 2024 <span
                                         uk-icon="icon: arrow-right"></span> по н.в</p>
                             </div>
 
-                            <p class="inter p">Сервис для подбора тарифов домашнего интернета и телевидения от +100
+                            <p class="inter ">Сервис для подбора тарифов домашнего интернета и телевидения от +100
                                 провайдеров</p>
 
-                            <a class="link uk-link-text inter" href="/gallery/progect1.html">Подробнее</a>
+                            <a class="link uk-link-text inter" href="./gallery/progect1.html">Подробнее</a>
                         </div>
                     </div>
                     <!-- /карточка работы 1-->
@@ -144,7 +167,7 @@
                         <img src="./images/work-2.png" loading="lazy" class="radius-img" alt="превью работы">
                         <div class="uk-margin-top">
                             <div class="uk-flex uk-flex-middle " style="gap: 16px;">
-                                <h3 class="inter h3">CRM-партнёры</h3>
+                                <h3 class="inter ">CRM-партнёры</h3>
 
                                 <p class="inter p font-wight-500 text-caption">март 2024 <span
                                         uk-icon="icon: arrow-right"></span> по н.в</p>
@@ -163,11 +186,11 @@
                             <div class="uk-flex uk-flex-middle " style="gap: 16px;">
                                 <h3 class="inter h3">SEO-сайты провайдеров</h3>
 
-                                <p class="inter p font-wight-500 text-caption">июнь 2023 <span
+                                <p class="inter  font-wight-500 text-caption">июнь 2023 <span
                                         uk-icon="icon: arrow-right"></span> по н.в</p>
                             </div>
 
-                            <p class="inter p">Группа сайтов провайдеров, предлагающих тарифы домашнего интернета и
+                            <p class="inter">Группа сайтов провайдеров, предлагающих тарифы домашнего интернета и
                                 телевидения</p>
 
                             <a class="link uk-link-text inter" href="/gallery/progect1.html">Подробнее</a>
@@ -180,7 +203,7 @@
         <!-- карьера -->
         <section class="uk-section">
             <div class="uk-container">
-                <h2 class=" h2  uk-text-center inter uk-margin-large-bottom">Карьера</h2>
+                <h2 class=" uk-text-center inter uk-margin-large-bottom">Карьера</h2>
 
                 <!-- карточка карьеры -->
                 <div class="card radius uk-flex" style="gap: 16px;">
@@ -190,20 +213,20 @@
                     </div>
                     <div>
                         <div class="uk-flex uk-flex-middle " style="gap: 16px;">
-                            <h3 class="inter h3">Тарифник</h3>
+                            <h3 class="inter ">Тарифник</h3>
 
-                            <p class="inter p font-wight-500 text-caption">июнь 2023 <span
+                            <p class="inter  font-wight-500 text-caption">июнь 2023 <span
                                     uk-icon="icon: arrow-right"></span> н.в</p>
                         </div>
 
-                        <p class="inter p">UI/UX designer</p>
-                        <p class="inter p">E-commerce телекоммуникационная компания, которая продает тарифы различных
+                        <p class="inter ">UI/UX designer</p>
+                        <p class="inter ">E-commerce телекоммуникационная компания, которая продает тарифы различных
                             провайдеров
                         </p>
 
                         <div class="uk-divider-small line-long"></div>
                         <div style="margin: 32px 0 32px 0;">
-                            <h3 class="inter h3 font-color-secondary">Результаты</h3>
+                            <h3 class="inter font-color-secondary">Результаты</h3>
                             <ul>
                                 <li>Провела редизайн 8 сайтов провайдеров, каждый из которых включает в себя от 20 до 50
                                     страниц</li>
@@ -218,7 +241,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h3 class="inter h3 font-color-secondary">Задачи</h3>
+                            <h3 class="inter font-color-secondary">Задачи</h3>
                             <ul>
                                 <li>Разработка и поддержка дизайн-системы</li>
                                 <li>Подготовка и передача макетов в разработку</li>
@@ -242,20 +265,20 @@
                     </div>
                     <div>
                         <div class="uk-flex uk-flex-middle " style="gap: 16px;">
-                            <h3 class="inter h3">Международная академия медицинского образования</h3>
+                            <h3 class="inter ">Международная академия медицинского образования</h3>
 
                             <p class="inter p font-wight-500 text-caption">май 2022 <span
                                     uk-icon="icon: arrow-right"></span> июнь 2023</p>
                         </div>
 
-                        <p class="inter p">Дизайнер</p>
-                        <p class="inter p">E-commerce медицинская компания, продающая курсы для хирургов, ординаторов,
+                        <p class="inter ">Дизайнер</p>
+                        <p class="inter ">E-commerce медицинская компания, продающая курсы для хирургов, ординаторов,
                             среднего медперсонала различных направленностей
                         </p>
 
                         <div class="uk-divider-small line-long"></div>
                         <div style="margin: 32px 0 32px 0;">
-                            <h3 class="inter h3 font-color-secondary">Результаты</h3>
+                            <h3 class="inter font-color-secondary">Результаты</h3>
                             <ul>
                                 <li>Создано +100 анимаций и коротких видео</li>
                                 <li>Отмантажировано +50 лекций, вебинаров и длинных видео</li>
@@ -263,7 +286,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h3 class="inter h3 font-color-secondary">Задачи</h3>
+                            <h3 class="inter font-color-secondary">Задачи</h3>
                             <ul>
                                 <li>Ведение дизайна для SMM</li>
                                 <li>Создание motion-роликов</li>
@@ -284,12 +307,18 @@
         <div class="radius " style=" background-color: var(--white); width: 99%; margin-inline: auto;">
             <div class="uk-container ">
 
-                <div class="uk-margin-large-bottom uk-margin-large-top uk-flex uk-flex-between	">
-                    <div>
-                                                <a class="link uk-link-text inter" target="_blank" href="https://t.me/Azal4118">Telegram</a>
-                        <a class="link uk-link-text inter" target="_blank" href="https://www.linkedin.com/in/margarita-tishkina-833b65224/">LinkedIn</a>
+                <div class="uk-margin-large-bottom uk-margin-large-top uk-flex uk-flex-between">
+                    <div >
+                        <a  id="telegram-margo-footer"
+                            class="uk-button uk-button-default inter radius uk-text-capitalize font-buttons"
+                            style="border: none; padding: 0;">
+                        </a>
+                        <a id="margo-simik-footer"
+                            class="uk-button uk-button-default inter radius uk-text-lowercase font-buttons"
+                            style="border: none; padding: 0;">
+                        </a>
                     </div>
-                    <p class="inter p">© 2024, всё сама ❤️</p>
+                    <p class="inter ">© 2024, всё сама ❤️</p>
                 </div>
             </div>
         </div>
