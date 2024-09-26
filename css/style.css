@@ -93,6 +93,9 @@ li {
 .h1-subtitle {
   width: 60%;
 }
+.uk-table td {
+  padding: 32px 12px;
+}
 
 @media(max-width: 768px) {
   .uk-heading-medium {
