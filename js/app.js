@@ -1,5 +1,5 @@
 let el = document.getElementById("margo-simik")
-el.innerHTML = "margo.simik@yandex.ru"
+el.innerHTML = "Почта"
 el.href = "mailto:margo.simik@yandex.ru" 
 
 let telegram = document.getElementById("telegram-margo")
@@ -15,7 +15,7 @@ telegramMobile.innerHTML = "telegram"
 telegramMobile.href = "https://t.me/Azal4118" 
 
 let elFooter = document.getElementById("margo-simik-footer")
-elFooter.innerHTML = "margo.simik@yandex.ru"
+elFooter.innerHTML = "Почта"
 elFooter.href = "mailto:margo.simik@yandex.ru" 
 
 let telegramFooter = document.getElementById("telegram-margo-footer")
