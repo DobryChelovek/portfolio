@@ -46,7 +46,31 @@ h2 {
   font-weight: 500;
   color: var(--base-400);
 }
+ .h1-text {
+  color: #000;
+ }
 
+ h1 > span{
+  animation: animateFilter 1s forwards var(--d);
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(10px);
+ }
+
+ @keyframes animateFilter {
+  0% {
+    filter: blur(10px);
+  }
+  100% {  
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.gradient{
+  color: var(--base-400);    
+}
 
 .card {
   background-color: var(--white);
