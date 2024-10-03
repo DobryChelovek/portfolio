@@ -7,7 +7,7 @@ telegram.innerHTML = "telegram"
 telegram.href = "https://t.me/Azal4118" 
 
 let elMobile = document.getElementById("margo-simik-m")
-elMobile.innerHTML = "margo.simik@yandex.ru"
+elMobile.innerHTML = "Почта"
 elMobile.href = "mailto:margo.simik@yandex.ru" 
 
 let telegramMobile = document.getElementById("telegram-margo-m")
